@@ -41,5 +41,5 @@ jobs:
         git config --global user.name "Pysio"
         git config --global user.email "qq593277393@outlook.com"
         git commit -m "Site deployed by GitHub Actions"
-        git remote add origin [https://$GH_TOKEN@$REPO]
+        git remote add origin https://$GH_TOKEN@$REPO
         git push origin master -f
