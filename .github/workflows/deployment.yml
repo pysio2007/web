@@ -35,8 +35,11 @@ jobs:
         REPO: github.com/Pysio2007/web
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
       run: |
-        cd ./public && git init && git add .
-        git config --global user.name $GIT_NAME
-        git config --global user.email $GIT_EMAIL
+        cd ./public 
+        git init 
+        git add .
+        git config --global user.name "Pysio"
+        git config --global user.email "qq593277393@outlook.com"
         git commit -m "Site deployed by GitHub Actions"
-        git push --force --quiet "https://$GH_TOKEN@$REPO" master:master
+        git remote add origin [https://$GH_TOKEN@$REPO]
+        git push origin master -f
