@@ -1,6 +1,6 @@
 git pull 
 git add .
-echo 推送原因
+echo Push Commit?
 set /p input=
 git commit -m "%input%"
 git push
