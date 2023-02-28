@@ -1,4 +1,6 @@
 git pull 
 git add .
-git commit -m "RUNRUNRUN"
+echo 推送原因
+set /p input=
+git commit -m "%input%"
 git push
